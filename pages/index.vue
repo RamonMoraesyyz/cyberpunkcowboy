@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-black text-white flex flex-col md:flex-row h-screen overflow-hidden">
+  <div class="relative bg-black text-white flex flex-col md:flex-row min-h-screen overflow-hidden">
 
     <!-- Conteúdo esquerdo (imagem) -->
     <div class="w-full md:w-1/2">
@@ -13,7 +13,7 @@
       <h1 class="text-2xl md:text-4xl font-bold mb-4 md:mb-10 mt-1">Cyberpunk cowboy n°1</h1>
 
       <!-- Campo para a data da produção -->
-      <div class="mb-4">
+      <div class="mb-10">
         <label class="text-lg">Produção: 11/01/2024</label>
         
       </div>
