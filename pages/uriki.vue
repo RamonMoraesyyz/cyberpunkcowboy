@@ -29,7 +29,7 @@
         <!-- Campo para o player de música -->
         <div class="w-full mb-4 md:mt-10">
           <audio controls class="w-full">
-            <source src="../public/uriki.aac" type="audio/mpeg">
+            <source src="../public/uriki.mp3" type="audio/mpeg">
           </audio>
         </div>
         
