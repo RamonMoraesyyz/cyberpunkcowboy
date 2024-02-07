@@ -35,6 +35,14 @@
             <source src="../public/spider.mp3" type="audio/mpeg">
           </audio>
         </div>
+
+        <div class="mt-4 text-center">
+        <nuxt-link to="/">
+          <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">
+            Back to menu
+          </button>
+        </nuxt-link>
+      </div>
         
       </div>
     </div>

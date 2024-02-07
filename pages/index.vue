@@ -1,37 +1,42 @@
 <template>
-  <div class="relative bg-black text-white flex flex-col md:flex-row min-h-screen overflow-hidden">
-
-    <!-- Conteúdo esquerdo (imagem) -->
-    <div class="w-full md:w-1/2">
-      <img src="/cyberpunkcowboy.png" class="w-full h-auto md:h-full object-cover transform scale-70" />
-    </div>
-
-    <!-- Conteúdo direito (título, data, detalhes) -->
-    <div class="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center">
-
-      <!-- Título -->
-      <h1 class="text-2xl md:text-4xl font-bold mb-4 md:mb-10 mt-1">Cyberpunk cowboy n°1</h1>
-
-      <!-- Campo para a data da produção -->
-      <div class="mb-10">
-        <label class="text-lg">Produção: 11/01/2024</label>
-        
+  <div class="flex flex-col items-center justify-center h-screen bg-black text-white">
+    <h1 class="text-3xl font-bold mb-4 md:mb-8 text-center">Cyberpunk Cowboy Project</h1>
+    <p class="text-sm md:text-base mb-4 md:mb-8 text-center">
+      Este projeto une a tecnologia e música, com imagens e textos gerados por IA, <br>
+      e com músicas de autoria e produção própria (meu laboratório musical) <br>
+      se juntam três elementos e sensações: a imagem, a história por trás e a música.
+    </p>
+    <div class="flex flex-col md:flex-row justify-center w-full md:w-1/2">
+      <div class="space-y-4 md:mr-4">
+        <nuxt-link to="/ciberpunkcowboy">
+          <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full md:w-auto">
+            Cyberpunk Cowboy n°1
+          </button>
+        </nuxt-link>
+        <nuxt-link to="/uriki">
+          <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full md:w-auto">
+            Uriki Indians n°2
+          </button>
+        </nuxt-link>
       </div>
-
-      <!-- Campo para detalhes -->
-      <div class="mb-4">
-        <label class="text-lg block mb-2">Em um futuro distante, Steel Rider, o cowboy cyberpunk, percorre as ruas de uma cidade futurística em seu cavalo de metal, tocando blues noturno nos bares decadentes. 
-          Com seu chapéu sombreado e olhos cibernéticos cintilantes, ele é mais do que um músico; é um guardião das histórias esquecidas da humanidade. 
-          Em um mundo onde a tecnologia e a solidão dominam, Steel Rider personifica a resistência, mantendo viva a tradição do blues e encontrando a humanidade nas notas de sua guitarra elétrica e nos relinchos metálicos de seu leal companheiro.</label>
+      <div class="space-y-4 mt-4 md:mt-0">
+        <nuxt-link to="/spider">
+          <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full md:w-auto">
+            Lady Spider n°3
+          </button>
+        </nuxt-link>
+        <nuxt-link to="/bongomaster">
+          <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full md:w-auto">
+            Bongo Master n°4
+          </button>
+        </nuxt-link>
       </div>
-
-      <!-- Campo para o player de música -->
-      <div class="w-full mb-4 md:mt-10">
-        <audio controls class="w-full">
-          <source src="../public/cyberpunkcowboyn1110124.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'MenuInicial'
+}
+</script>
