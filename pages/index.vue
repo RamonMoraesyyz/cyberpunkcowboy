@@ -41,6 +41,15 @@
               </button>
             </div>
           </nuxt-link>
+
+          <nuxt-link to="/bossanovasunday">
+            <div>
+              <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 mt-4 rounded w-full">
+                Bossa Nova Sunday n°5
+              </button>
+            </div>
+          </nuxt-link>
+
         </div>
       </div>
     </div>
