@@ -9,48 +9,49 @@
         além de contar com músicas de autoria e produção própria (oriundas do meu laboratório musical). 
         Nele, convergem três elementos essenciais: a visualidade, a narrativa e a melodia.
       </p>
-      <div class="flex flex-col md:flex-row justify-center w-full">
-        <div class="w-full md:w-1/2 p-2">
-          <nuxt-link to="/cyberpunkcowboy">
-            <div class="mb-4">
-              <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
-                Cyberpunk Cowboy n°1
-              </button>
-            </div>
-          </nuxt-link>
-          <nuxt-link to="/uriki">
-            <div>
-              <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
-                Uriki Indians n°2
-              </button>
-            </div>
-          </nuxt-link>
-        </div>
-        <div class="w-full md:w-1/2 p-2">
-          <nuxt-link to="/spider">
-            <div class="mb-4">
-              <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
-                Lady Spider n°3
-              </button>
-            </div>
-          </nuxt-link>
-          <nuxt-link to="/bongomaster">
-            <div>
-              <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
-                Bongo Master n°4
-              </button>
-            </div>
-          </nuxt-link>
-
-          <nuxt-link to="/bossanovasunday">
-            <div>
-              <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 mt-4 rounded w-full">
-                Bossa Nova Sunday n°5
-              </button>
-            </div>
-          </nuxt-link>
-
-        </div>
+      <div class="grid grid-cols-2 gap-4">
+        <nuxt-link to="/cyberpunkcowboy">
+          <div>
+            <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
+              Cyberpunk Cowboy n°1
+            </button>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/uriki">
+          <div>
+            <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
+              Uriki Indians n°2
+            </button>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/spider">
+          <div>
+            <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
+              Lady Spider n°3
+            </button>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/bongomaster">
+          <div>
+            <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
+              Bongo Master n°4
+            </button>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/bossanovasunday">
+          <div>
+            <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
+              Bossa Nova Sunday n°5
+            </button>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/monsterfuzz">
+          <div>
+            <button class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded w-full">
+              Monster Fuzz n°6
+            </button>
+          </div>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -61,3 +62,15 @@ export default {
   name: 'MenuInicial'
 }
 </script>
+
+<style scoped>
+.grid {
+  display: grid;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.gap-4 {
+  gap: 1rem;
+}
+</style>
